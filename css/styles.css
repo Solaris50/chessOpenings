@@ -1,0 +1,154 @@
+body {
+  background-color: #21A0A0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 5rem;
+}
+
+.index-p {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+
+/* Inital styling to make the div contents centered, also added in some extra classes at the bottom in case of universal need */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* button styles for the homepage*/
+.btn {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: whitesmoke;
+  background: #E53D00;
+  border-radius: 4px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  box-shadow: 0 0.2rem 1.2rem 0 black;
+  transition: transform 100ms;
+  transform: scale(1.01);
+}
+
+/* In case I don't want them you click anything*/
+.btn[disable]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#database-btn {
+  background:#046865;
+}
+
+#database-btn:hover{
+  box-shadow: 0 0.2rem 1.2rem 0 black;
+}
+
+.fa-chess-rook{
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+}
+
+.fa-chess{
+  font-size: 5rem;
+  margin-left:1.5rem;
+}
+
+/* End Page Css */
+
+.end-form-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 white;
+}
+
+input::placeholder {
+  color: grey;
+}
+
+#username {
+  margin: 3rem 0;
+  width: 100%;
+  outline: none;
+}
+
+#end-text {
+  font-size: 2.4rem;
+  color: white;
+  text-align: center;
+}
+
+#saveScoreBtn{
+  border: none;
+}
+
+.fa-home{
+  margin-left: 1.2rem;
+  font-size: 2rem;
+  color: white;
+}
