@@ -1,5 +1,12 @@
+html,
 body {
-  background-color: #21A0A0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #21a0a0;
 }
 
 * {
@@ -7,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 
 h1 {
@@ -16,12 +23,17 @@ h1 {
   margin-bottom: 5rem;
 }
 
+h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
 .index-p {
   font-size: 2rem;
   color: white;
   margin-bottom: 4rem;
 }
-
 
 /* Inital styling to make the div contents centered, also added in some extra classes at the bottom in case of universal need */
 .container {
@@ -41,26 +53,108 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.flex-column{
+.flex-column {
   display: flex;
   flex-direction: column;
 }
 
-.flex-center{
+.flex-center {
   justify-content: center;
   align-items: center;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
 .hidden {
   display: none;
+}
+
+.index-p {
+  text-align: center;
+}
+
+/*background animation*/
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small {
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium {
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large {
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge {
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge {
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1 {
+  opacity: 0.2;
+}
+.shade2 {
+  opacity: 0.5;
+}
+
+.shade3 {
+  opacity: 0.7;
+}
+
+.shade4 {
+  opacity: 0.8;
+}
+
+.shade5 {
+  opacity: 0.9;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.4);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(0.4);
+  }
 }
 
 /* button styles for the homepage*/
@@ -72,11 +166,11 @@ h1 {
   margin-bottom: 1rem;
   text-decoration: none;
   color: whitesmoke;
-  background: #E53D00;
+  background: #e53d00;
   border-radius: 4px;
 }
 
-.btn:hover{
+.btn:hover {
   cursor: pointer;
   box-shadow: 0 0.2rem 1.2rem 0 black;
   transition: transform 100ms;
@@ -91,26 +185,26 @@ h1 {
 }
 
 #database-btn {
-  background:#046865;
+  background: #046865;
 }
 
-#database-btn:hover{
+#database-btn:hover {
   box-shadow: 0 0.2rem 1.2rem 0 black;
 }
 
-.fa-chess-rook{
+.fa-chess-rook {
   font-size: 2.5rem;
   margin-left: 1.5rem;
 }
 
-.fa-chess{
+.fa-chess {
   font-size: 5rem;
-  margin-left:1.5rem;
+  margin-left: 1.5rem;
 }
 
 /* End Page Css */
 
-.end-form-container{
+.end-form-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -143,12 +237,20 @@ input::placeholder {
   text-align: center;
 }
 
-#saveScoreBtn{
+#saveScoreBtn {
   border: none;
 }
 
-.fa-home{
+.fa-home {
   margin-left: 1.2rem;
   font-size: 2rem;
   color: white;
+}
+
+.errorMessage {
+  color: rgb(175, 0, 0);
+  font-size: 1.5rem;
+  margin-top: -20px;
+  padding-bottom: 10%;
+  display: none;
 }
